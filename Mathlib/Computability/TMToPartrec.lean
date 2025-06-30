@@ -198,10 +198,10 @@ inductive Λ'
   | pred (q₁ q₂ : Λ')
   | ret (k : Cont')
 
-compile_inductive% Code
-compile_inductive% Cont'
-compile_inductive% K'
-compile_inductive% Λ'
+-- compile_inductive% Code
+-- compile_inductive% Cont'
+-- compile_inductive% K'
+-- compile_inductive% Λ'
 
 instance Λ'.instInhabited : Inhabited Λ' :=
   ⟨Λ'.ret Cont'.halt⟩
